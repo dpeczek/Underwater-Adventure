@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_menu_background">#f555AEFF</color>
+    <color name="menu_button">#ff557AFF</color>
+    
+    
+    <!-- Kolory planszy -->
+    <!-- TODO: TRZEBA DOBRAĆ KOLORKI -->
+    <color name="main_board">#FFFFFFFF</color>
+    <color name="board_field">#FFFFFF</color>
+    <color name="board_line">#000000</color>
+    
+</resources>

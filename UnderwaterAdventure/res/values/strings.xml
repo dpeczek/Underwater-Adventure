@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Underwater Adventure</string>
+    <string name="menu_title">Underwater Adventure</string>
+	
+    <!-- MENU GŁÓWNE -->
+    <string name="menu_game">Graj</string>
+    <string name="menu_instructions">Instrukcje</string>
+    <string name="menu_settings">Ustawienia</string>
+    <string name="menu_credits">Autorzy</string>
+    <string name="menu_exit">Wyjście</string>
+</resources>
