@@ -2,6 +2,7 @@ package dpp.android.underwateradventure;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
@@ -26,13 +27,12 @@ public class Plansza extends View {
 	private Rect backgroundRectangle;//Prostokąt tła planszy
 	public Plansza(Context context) {
 		super(context);
-		
 		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
 	protected void onSizeChanged(int s, int w, int staras, int staraw){
-		wysokosc=getHeight()/3*2;
+		wysokosc=getHeight();
 		szerokosc=getWidth();
 		poleWysokosc=wysokosc/5;
 		poleSzerokosc=szerokosc/5;
@@ -41,6 +41,48 @@ public class Plansza extends View {
 		super.onSizeChanged(s, w, staras, staraw);
 	}
 	
+	@Override
+	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+
+	    int desiredWidth = getWidth();
+	    int desiredHeight = getHeight();
+
+	    int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+	    int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+	    int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+	    int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+
+	    int width;
+	    int height;
+	    width = widthSize;
+	    height = heightSize/3*2;
+	    /*//Measure Width
+	    if (widthMode == MeasureSpec.EXACTLY) {
+	        //Must be this size
+	        width = widthSize;
+	    } else if (widthMode == MeasureSpec.AT_MOST) {
+	        //Can't be bigger than...
+	        width = Math.min(desiredWidth, widthSize);
+	    } else {
+	        //Be whatever you want
+	        width = desiredWidth;
+	    }
+
+	    //Measure Height
+	    if (heightMode == MeasureSpec.EXACTLY) {
+	        //Must be this size
+	        height = heightSize;
+	    } else if (heightMode == MeasureSpec.AT_MOST) {
+	        //Can't be bigger than...
+	        height = Math.min(desiredHeight, heightSize);
+	    } else {
+	        //Be whatever you want
+	        height = desiredHeight;
+	    }*/
+
+	    //MUST CALL THIS
+	    setMeasuredDimension(width, height);
+	}
 	@SuppressLint("ResourceAsColor")
 	@Override
 	protected void onDraw(Canvas plotno) {
@@ -62,9 +104,7 @@ public class Plansza extends View {
 			//Linie poziome
 			plotno.drawLine(0, i*poleWysokosc, szerokosc, i*poleWysokosc, lines);
 		}
-		
-		
-		
+			
 	}
 
 }

@@ -2,6 +2,7 @@ package dpp.android.underwateradventure;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -31,7 +32,7 @@ public class main extends Activity implements OnClickListener {
 		przyciskGra.setOnClickListener(this);
 		View przyciskWyjscie = findViewById(R.id.exit);
 		przyciskWyjscie.setOnClickListener(this);
-
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		return true;
 	}
 
@@ -42,6 +43,7 @@ public class main extends Activity implements OnClickListener {
 		case R.id.game:
 			Intent intencja=new  Intent(this, Gra.class);
 			startActivity(intencja);
+			break;
 		case R.id.exit:
 			finish();
 			break;

@@ -6,8 +6,8 @@
     
     <!-- Kolory planszy -->
     <!-- TODO: TRZEBA DOBRAĆ KOLORKI -->
-    <color name="main_board">#FFFFFFFF</color>
-    <color name="board_field">#FFFFFF</color>
-    <color name="board_line">#000000</color>
+    <color name="main_board">#FFF45F12</color>
+    <color name="board_field">FFF45F12</color>
+    <color name="board_line">#FFA45112</color>
     
 </resources>
