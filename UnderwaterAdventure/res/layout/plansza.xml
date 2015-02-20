@@ -3,9 +3,10 @@
     android:id="@+id/wol"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:weightSum="3">
 
-	<!--  <TableLayout
+	  <TableLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="fill_parent"
 	    android:background="@color/main_menu_background" >
@@ -80,7 +81,7 @@
 		     
 		</TableRow>
 		
-	</TableLayout>-->
+	</TableLayout>
 	
 	<View android:id="@+id/WAT"/>
    	<Button android:layout_width="match_parent"

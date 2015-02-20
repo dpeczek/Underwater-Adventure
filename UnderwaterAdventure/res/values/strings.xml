@@ -9,4 +9,14 @@
     <string name="menu_settings">Ustawienia</string>
     <string name="menu_credits">Autorzy</string>
     <string name="menu_exit">Wyjście</string>
+    
+    <!-- GUI GRY -->
+    <string name="etykieta_niebieskie">Niebieskie Kości</string>
+    <string name="etykieta_czerwone">Czerwone Kości</string>
+    <string name="niebieskie_ilosc">x 5</string>
+    <string name="czerwone_ilosc">x 0</string>
+    <string name="przycisk_rzucaj">Rzuć kością</string>
+    <string name="przycisk_podnies">Podnieś</string>
+    <string name="przycisk_wracaj">POWRÓT!!!</string>
+    
 </resources>

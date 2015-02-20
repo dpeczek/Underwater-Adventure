@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical" 
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/KostkiNiebieskie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etykieta_niebieskie" />
+
+        <TextView
+            android:id="@+id/textKostkiNiebieskieCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/niebieskie_ilosc" />
+
+        <Button
+            android:id="@+id/przyciskRzutu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/przycisk_rzucaj" />
+
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/KostkiCzerwone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/etykieta_czerwone" />
+
+        <TextView
+            android:id="@+id/textKostkiCzerwoneCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/czerwone_ilosc" />
+
+		<Button
+		    android:id="@+id/przyciskZebrania"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/przycisk_podnies" />
+
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/przyciskPowrotu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/przycisk_wracaj" />
+
+</LinearLayout>

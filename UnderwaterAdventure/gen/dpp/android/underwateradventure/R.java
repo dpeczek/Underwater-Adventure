@@ -19,25 +19,42 @@ public final class R {
         public static final int main_board=0x7f040002;
         public static final int main_menu_background=0x7f040000;
         public static final int menu_button=0x7f040001;
+        public static final int player_color=0x7f040005;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int WAT=0x7f070006;
-        public static final int credits=0x7f070003;
-        public static final int exit=0x7f070004;
-        public static final int game=0x7f070000;
-        public static final int instructions=0x7f070001;
-        public static final int settings=0x7f070002;
-        public static final int wol=0x7f070005;
+        public static final int KostkiCzerwone=0x7f070003;
+        public static final int KostkiNiebieskie=0x7f070000;
+        public static final int WAT=0x7f07000e;
+        public static final int button1=0x7f07000f;
+        public static final int credits=0x7f07000a;
+        public static final int exit=0x7f07000b;
+        public static final int game=0x7f070007;
+        public static final int instructions=0x7f070008;
+        public static final int przycisk=0x7f07000d;
+        public static final int przyciskPowrotu=0x7f070006;
+        public static final int przyciskRzutu=0x7f070002;
+        public static final int przyciskZebrania=0x7f070005;
+        public static final int settings=0x7f070009;
+        public static final int textKostkiCzerwoneCount=0x7f070004;
+        public static final int textKostkiNiebieskieCount=0x7f070001;
+        public static final int wol=0x7f07000c;
     }
     public static final class layout {
-        public static final int main_menu_layout=0x7f030000;
-        public static final int plansza=0x7f030001;
+        public static final int game_gui_layout=0x7f030000;
+        public static final int main_menu_layout=0x7f030001;
+        public static final int plansza=0x7f030002;
+        public static final int test_layout=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
+        public static final int czerwone_ilosc=0x7f05000a;
+        public static final int etykieta_czerwone=0x7f050008;
+        /**  GUI GRY 
+         */
+        public static final int etykieta_niebieskie=0x7f050007;
         public static final int menu_credits=0x7f050005;
         public static final int menu_exit=0x7f050006;
         /**  MENU GŁÓWNE 
@@ -46,6 +63,10 @@ public final class R {
         public static final int menu_instructions=0x7f050003;
         public static final int menu_settings=0x7f050004;
         public static final int menu_title=0x7f050001;
+        public static final int niebieskie_ilosc=0x7f050009;
+        public static final int przycisk_podnies=0x7f05000c;
+        public static final int przycisk_rzucaj=0x7f05000b;
+        public static final int przycisk_wracaj=0x7f05000d;
     }
     public static final class style {
         /** 

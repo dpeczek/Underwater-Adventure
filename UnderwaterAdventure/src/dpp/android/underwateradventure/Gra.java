@@ -1,6 +1,7 @@
 package dpp.android.underwateradventure;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -32,29 +33,15 @@ public class Gra extends Activity {
 		plansza.setTop(50);
 		
 		LinearLayout l=new LinearLayout(this);
-		LinearLayout l2=new LinearLayout(this);
-		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-	            LinearLayout.LayoutParams.MATCH_PARENT,
-	            LinearLayout.LayoutParams.MATCH_PARENT);
-		//l2.setLayoutParams(layoutParams);
-		l2.setBackgroundColor(getResources().getColor(R.color.main_board));
 		l.setOrientation(LinearLayout.VERTICAL);
-		l2.setOrientation(LinearLayout.VERTICAL);
-		Button b=new Button(this);
-		b.setText("VAAAAAAAAAAAAAAAAAAAAAAT");
-		Button b2=new Button(this);
-		b2.setText("VAAAAAAAAAAAAAAAAAAAAAAT");
-		
-		l2.addView(b);
 		
 		
+		LayoutInflater li = this.getLayoutInflater();
 		
 		
 		l.addView(plansza);
-		l.addView(l2);
-		l.addView(b2);
-		ScrollView sv=new ScrollView(this);
-		//sv.addView(l);
+		li.inflate(R.layout.game_gui_layout, l);
+		
 		setContentView(l);
 	}
 }
