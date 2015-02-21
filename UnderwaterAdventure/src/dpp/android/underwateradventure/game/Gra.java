@@ -1,5 +1,7 @@
-package dpp.android.underwateradventure;
+package dpp.android.underwateradventure.game;
 
+import dpp.android.underwateradventure.R;
+import dpp.android.underwateradventure.R.layout;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;

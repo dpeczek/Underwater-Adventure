@@ -1,5 +1,7 @@
-package dpp.android.underwateradventure;
+package dpp.android.underwateradventure.game;
 
+import dpp.android.underwateradventure.R;
+import dpp.android.underwateradventure.R.color;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
