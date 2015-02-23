@@ -19,7 +19,9 @@ import android.view.View;
  *
  */
 public class Plansza extends View {
-
+	
+	//TODO: Trzeba zrobić, żeby zaznaczały się ALBO NIEBIESKIE ALBO CZERWONE kości
+	
 	//Rozmiary plansz mają być 2/3 wysokości
 	private static int wysokosc;
 	private static int szerokosc;

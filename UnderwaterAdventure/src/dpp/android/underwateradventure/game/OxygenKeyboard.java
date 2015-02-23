@@ -1,11 +1,13 @@
 package dpp.android.underwateradventure.game;
 
+import java.util.Arrays;
+
 import dpp.android.underwateradventure.R;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
@@ -21,17 +23,28 @@ public class OxygenKeyboard extends Dialog {
 
 	protected static final String ZNACZNIK="OXYGEN KEYBOARD";
 	
+	private final Gra gra;
+	
 	//Tablica przechowywująca referencje do check boxów z okna dialogowego
 	private final CheckBox[] klawisze=new CheckBox[24];
 	private View przyciskGotowe;
 	
-	public OxygenKeyboard(Context context) {
+	
+	
+	public OxygenKeyboard(Context context, Gra gra) {
 		super(context);
 		// TODO Auto-generated constructor stub
+		this.gra=gra;
 	}
+	
+
 	
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.oxygen_setter);
+		setComponents();
+		ustawNasluchiwanie();
+		
 	}
 	
 	/**
@@ -82,7 +95,7 @@ public class OxygenKeyboard extends Dialog {
 				@Override
 				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 					// TODO Wstawić metodę, która robi to co jest w komentarzu powyżej
-					
+					checkCheckBoxFields();
 				}
 			});
 		}
@@ -94,10 +107,89 @@ public class OxygenKeyboard extends Dialog {
 			@Override
 			public void onClick(View v) {
 				// TODO Wstawić jakąś metodę, która w tym miejscu zadziała
-				
+				checkButton();
 			}
 		});
 		
 	}
+	
+	/**
+	 * Metoda zajmuje się sprawdzeniem, czy 5 pól zostało zaznaczonych
+	 */
+	private void checkCheckBoxFields(){
+		int border=5, counter=0;
+		
+		int[] zaznaczone=new int[5];
+		
+		Log.d(ZNACZNIK, "Uruchamiam sprawdzacz zgodności CheckBoxów");
+		
+		for(int i=0; i<klawisze.length; i++){
+			if(klawisze[i].isChecked()){
+				//Dodaj index do tablicy przechowująca zaznaczone elementy
+				zaznaczone[counter]=i;
+				counter++;			
+			}
+			if(counter==border){
+				Log.d(ZNACZNIK, "Osiągnięto limit wyłączam nieużytki");
+				
+				/*Iterujemy się po polach, jeśli numerek któregoś się NIE zgadza wyłączamy go*/
+				for(int j=0;j<klawisze.length; j++){
+					if(!klawisze[j].isChecked())
+						klawisze[j].setEnabled(false);
+				}
+				break;
+			}else{
+				Log.d(ZNACZNIK, "Limit nieosiągnięty robię enable'a na wszystkich");
+				for(int j=0; j<klawisze.length; j++){
+						klawisze[j].setEnabled(true);
+				}
+			}
+		}
+		
+	}
+	
+	/**
+	 * Metoda sprawdza, które pola zostały oznaczone i jeśli wszystko się zgadza głowne pole z 
+	 * zaznaczonymi polami zostaje ustawione
+	 */
+	private void checkButton(){
+		int border=5, counter=0;
+		
+		int[] zaznaczone=new int[5];
+		
+		Log.d(ZNACZNIK, "Uruchamiam sprawdzacz zgodności przycisku do checkboxów");
+		
+		for(int i=0; i<klawisze.length; i++){
+			if(klawisze[i].isChecked()){
+				zaznaczone[counter]=i;
+				counter++;
+				if(counter==border){
+					//Skoro osiągnięto limit wrzuć w odpowiednie miejsce oznaczone pola
+					//Trzeba je najpierw posortować, bo nie wiemy w jakiej kolejności użytkownik je wprowadzał
+					Arrays.sort(zaznaczone);
+					Log.d(ZNACZNIK, "Uruchamiam sprawdzacz zgodności przycisku do checkboxów "+"posortowane "+checkSort(zaznaczone));
+					gra.setOxygenFields(zaznaczone);
+					gra.setOxygenSet(true);
+					dismiss();
+					break;
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Metoda dla debuggera, sprawdzamy, czy została posortowana tablica dla butli z tlenem
+	 */
+	private String checkSort(int [] tab){
+		StringBuilder sb=new StringBuilder();
+		for(int i=0; i<tab.length; i++){
+			sb.append(tab[i]);
+			sb.append(" ");
+		}
+		
+		return sb.toString();
+	}
+
+
 
 }

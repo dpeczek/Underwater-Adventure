@@ -3,7 +3,7 @@
 <!-- Okno, na którym gracz na początku wybierze 5 pól, gdzie znajdą się butle z tlenem -->
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/oxygen_keyboard"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
@@ -24,6 +24,9 @@
         <CheckBox
             android:id="@+id/oxygen_4"
             android:text="4" />
+    </TableRow>
+
+    <TableRow>
 
         <CheckBox
             android:id="@+id/oxygen_5"
@@ -32,9 +35,6 @@
         <CheckBox
             android:id="@+id/oxygen_6"
             android:text="6" />
-    </TableRow>
-
-    <TableRow>
 
         <CheckBox
             android:id="@+id/oxygen_7"
@@ -43,6 +43,9 @@
         <CheckBox
             android:id="@+id/oxygen_8"
             android:text="8" />
+    </TableRow>
+
+    <TableRow>
 
         <CheckBox
             android:id="@+id/oxygen_9"
@@ -69,6 +72,7 @@
 
         <CheckBox
             android:id="@+id/oxygen_14"
+            android:layout_gravity="center"
             android:text="14" />
 
         <CheckBox
@@ -79,16 +83,16 @@
             android:id="@+id/oxygen_16"
             android:text="16" />
 
-        <CheckBox
+
+    </TableRow>
+	<TableRow >
+	            <CheckBox
             android:id="@+id/oxygen_17"
             android:text="17" />
 
         <CheckBox
             android:id="@+id/oxygen_18"
             android:text="18" />
-    </TableRow>
-
-    <TableRow>
 
         <CheckBox
             android:id="@+id/oxygen_19"
@@ -97,6 +101,8 @@
         <CheckBox
             android:id="@+id/oxygen_20"
             android:text="20" />
+	</TableRow>
+    <TableRow>
 
         <CheckBox
             android:id="@+id/oxygen_21"
