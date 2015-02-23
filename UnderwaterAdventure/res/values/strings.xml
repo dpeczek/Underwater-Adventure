@@ -18,5 +18,6 @@
     <string name="przycisk_rzucaj">Rzuć kością</string>
     <string name="przycisk_podnies">Podnieś</string>
     <string name="przycisk_wracaj">POWRÓT!!!</string>
-    
+       
+    <string name="label_oxygen_button_ready">Tlen ustawiony</string>
 </resources>

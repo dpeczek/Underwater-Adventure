@@ -27,26 +27,53 @@ public final class R {
     public static final class id {
         public static final int KostkiCzerwone=0x7f070003;
         public static final int KostkiNiebieskie=0x7f070000;
-        public static final int WAT=0x7f07000e;
-        public static final int button1=0x7f07000f;
+        public static final int WAT=0x7f070028;
+        public static final int button1=0x7f070029;
+        public static final int button_oxygen_ready=0x7f070025;
         public static final int credits=0x7f07000a;
         public static final int exit=0x7f07000b;
         public static final int game=0x7f070007;
         public static final int instructions=0x7f070008;
-        public static final int przycisk=0x7f07000d;
+        public static final int oxygen_1=0x7f07000d;
+        public static final int oxygen_10=0x7f070016;
+        public static final int oxygen_11=0x7f070017;
+        public static final int oxygen_12=0x7f070018;
+        public static final int oxygen_13=0x7f070019;
+        public static final int oxygen_14=0x7f07001a;
+        public static final int oxygen_15=0x7f07001b;
+        public static final int oxygen_16=0x7f07001c;
+        public static final int oxygen_17=0x7f07001d;
+        public static final int oxygen_18=0x7f07001e;
+        public static final int oxygen_19=0x7f07001f;
+        public static final int oxygen_2=0x7f07000e;
+        public static final int oxygen_20=0x7f070020;
+        public static final int oxygen_21=0x7f070021;
+        public static final int oxygen_22=0x7f070022;
+        public static final int oxygen_23=0x7f070023;
+        public static final int oxygen_24=0x7f070024;
+        public static final int oxygen_3=0x7f07000f;
+        public static final int oxygen_4=0x7f070010;
+        public static final int oxygen_5=0x7f070011;
+        public static final int oxygen_6=0x7f070012;
+        public static final int oxygen_7=0x7f070013;
+        public static final int oxygen_8=0x7f070014;
+        public static final int oxygen_9=0x7f070015;
+        public static final int oxygen_keyboard=0x7f07000c;
+        public static final int przycisk=0x7f070027;
         public static final int przyciskPowrotu=0x7f070006;
         public static final int przyciskRzutu=0x7f070002;
         public static final int przyciskZebrania=0x7f070005;
         public static final int settings=0x7f070009;
         public static final int textKostkiCzerwoneCount=0x7f070004;
         public static final int textKostkiNiebieskieCount=0x7f070001;
-        public static final int wol=0x7f07000c;
+        public static final int wol=0x7f070026;
     }
     public static final class layout {
         public static final int game_gui_layout=0x7f030000;
         public static final int main_menu_layout=0x7f030001;
-        public static final int plansza=0x7f030002;
-        public static final int test_layout=0x7f030003;
+        public static final int oxygen_setter=0x7f030002;
+        public static final int plansza=0x7f030003;
+        public static final int test_layout=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
@@ -55,6 +82,7 @@ public final class R {
         /**  GUI GRY 
          */
         public static final int etykieta_niebieskie=0x7f050007;
+        public static final int label_oxygen_button_ready=0x7f05000e;
         public static final int menu_credits=0x7f050005;
         public static final int menu_exit=0x7f050006;
         /**  MENU GŁÓWNE 

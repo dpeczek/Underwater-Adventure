@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Okno, na którym gracz na początku wybierze 5 pól, gdzie znajdą się butle z tlenem -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oxygen_keyboard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/oxygen_1"
+            android:text="1" />
+
+        <CheckBox
+            android:id="@+id/oxygen_2"
+            android:text="2" />
+
+        <CheckBox
+            android:id="@+id/oxygen_3"
+            android:text="3" />
+
+        <CheckBox
+            android:id="@+id/oxygen_4"
+            android:text="4" />
+
+        <CheckBox
+            android:id="@+id/oxygen_5"
+            android:text="5" />
+
+        <CheckBox
+            android:id="@+id/oxygen_6"
+            android:text="6" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/oxygen_7"
+            android:text="7" />
+
+        <CheckBox
+            android:id="@+id/oxygen_8"
+            android:text="8" />
+
+        <CheckBox
+            android:id="@+id/oxygen_9"
+            android:text="9" />
+
+        <CheckBox
+            android:id="@+id/oxygen_10"
+            android:text="10" />
+
+        <CheckBox
+            android:id="@+id/oxygen_11"
+            android:text="11" />
+
+        <CheckBox
+            android:id="@+id/oxygen_12"
+            android:text="12" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/oxygen_13"
+            android:text="13" />
+
+        <CheckBox
+            android:id="@+id/oxygen_14"
+            android:text="14" />
+
+        <CheckBox
+            android:id="@+id/oxygen_15"
+            android:text="15" />
+
+        <CheckBox
+            android:id="@+id/oxygen_16"
+            android:text="16" />
+
+        <CheckBox
+            android:id="@+id/oxygen_17"
+            android:text="17" />
+
+        <CheckBox
+            android:id="@+id/oxygen_18"
+            android:text="18" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/oxygen_19"
+            android:text="19" />
+
+        <CheckBox
+            android:id="@+id/oxygen_20"
+            android:text="20" />
+
+        <CheckBox
+            android:id="@+id/oxygen_21"
+            android:text="21" />
+
+        <CheckBox
+            android:id="@+id/oxygen_22"
+            android:text="22" />
+
+        <CheckBox
+            android:id="@+id/oxygen_23"
+            android:text="23" />
+
+        <CheckBox
+            android:id="@+id/oxygen_24"
+            android:text="24" />
+    </TableRow>
+
+    <!-- Przycisk zakończenia -->
+
+    <Button
+        android:id="@+id/button_oxygen_ready"
+        android:layout_width="fill_parent"
+        android:text="@string/label_oxygen_button_ready" />
+
+</TableLayout>
